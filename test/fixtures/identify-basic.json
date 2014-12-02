@@ -1,0 +1,54 @@
+{
+  "input": {
+    "type": "identify",
+    "timestamp": "2014",
+    "userId": "user-id",
+    "traits": {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "jd@example.com"
+    },
+    "context": {
+      "ip": "10.0.0.2",
+      "app": {
+        "name": "Test",
+        "version": "1.0"
+      },
+      "device": {
+        "name": "test-device",
+        "model": "1.2",
+        "manufacturer": "some-brand",
+        "advertisingId": "id-for-attribution",
+        "id": "some-device"
+      },
+      "os": {
+        "name": "iOS",
+        "version": "7.0"
+      },
+      "network": {
+        "carrier": "some-carrier",
+        "wifi": true
+      },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-android"
+      },
+      "referrer": {
+        "type": "other",
+        "id": "some-id"
+      }
+    }
+  },
+  "output": {
+    "type": "identify",
+    "dev_id": "some-device",
+    "username": "user-id",
+    "user_email": "jd@example.com",
+    "event": "start",
+    "app_name": "Test",
+    "app_ver": "1.0",
+    "os_name": "iOS",
+    "os_version": "7.0",
+    "dev_name": "1.2"
+  }
+}
