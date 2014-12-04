@@ -1,7 +1,7 @@
 
 var Test = require('segmentio-integration-tester');
 var Kahuna = require('../');
-var mapper = require('../mapper');
+var mapper = require('../lib/mapper');
 
 describe('Kahuna', function(){
   var kahuna;
@@ -22,11 +22,11 @@ describe('Kahuna', function(){
     test
       .name('Kahuna')
       .channels(['server', 'mobile'])
-      .ensure('settings.apiKey')
+      .ensure('settings.key')
       .retries(2);
   });
 
-  describe('.validate()', function() {
+  describe('.validate()', function(){
     it('should not be valid without an api key', function(){
       delete settings.key;
       test.invalid({}, settings);
@@ -55,21 +55,16 @@ describe('Kahuna', function(){
   describe('.identify()', function(){
     it('should send basic identify', function(done){
       var json = test.fixture('identify-basic');
+
+      json.output.key = settings.key;
+      json.output.env = settings.env;
+
       var output = json.output;
-      output.timestamp = new Date(output.timestamp);
       test
         .identify(json.input)
         .sends(json.output)
         .expects(200)
         .end(done);
-    });
-
-    it('should error on invalid key', function(done){
-      var json = test.fixture('identify-basic');
-      test
-        .set({ apiKey: 'x' })
-        .identify(json.input)
-        .error('error message', done);
     });
   });
 
@@ -83,14 +78,6 @@ describe('Kahuna', function(){
         .sends(json.output)
         .expects(200)
         .end(done);
-    });
-
-    it('should error on invalid key', function(done){
-      var json = test.fixture('track-basic');
-      test
-        .set({ apiKey: 'x' })
-        .track(json.input)
-        .error('error message', done);
     });
   });
 */

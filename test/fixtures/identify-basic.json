@@ -1,7 +1,6 @@
 {
   "input": {
     "type": "identify",
-    "timestamp": "2014",
     "userId": "user-id",
     "traits": {
       "firstName": "John",
@@ -40,7 +39,6 @@
     }
   },
   "output": {
-    "type": "identify",
     "dev_id": "some-device",
     "username": "user-id",
     "user_email": "jd@example.com",
