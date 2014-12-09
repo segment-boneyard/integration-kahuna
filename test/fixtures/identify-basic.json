@@ -42,6 +42,12 @@
     "dev_id": "some-device",
     "username": "user-id",
     "user_email": "jd@example.com",
+    "user_info": {
+      "email": "jd@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "id": "user-id"
+    },
     "event": "start",
     "app_name": "Test",
     "app_ver": "1.0",
