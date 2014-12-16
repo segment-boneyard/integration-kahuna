@@ -11,7 +11,7 @@ describe('Kahuna', function(){
   beforeEach(function(){
     settings = {
       key: '6bc9b7c617d5436baf11d8a113499435',
-      env: 's'
+      env: 'p'
     };
     kahuna = new Kahuna(settings)
     test = Test(kahuna, __dirname);
