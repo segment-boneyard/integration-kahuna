@@ -1,11 +1,11 @@
 {
   "input": {
     "type": "identify",
-    "userId": "user-id",
+    "userId": "user-id2",
     "traits": {
-      "firstName": "John",
+      "firstName": "Jane",
       "lastName": "Doe",
-      "email": "jd@example.com"
+      "email": "janedoe@example.com"
     },
     "context": {
       "ip": "10.0.0.2",
@@ -40,13 +40,13 @@
   },
   "output": {
     "dev_id": "some-device",
-    "username": "user-id",
-    "user_email": "jd@example.com",
+    "username": "user-id2",
+    "user_email": "janedoe@example.com",
     "user_info": {
-      "email": "jd@example.com",
-      "firstName": "John",
+      "email": "janedoe@example.com",
+      "firstName": "Jane",
       "lastName": "Doe",
-      "id": "user-id"
+      "id": "user-id2"
     },
     "event": "start",
     "app_name": "Test",

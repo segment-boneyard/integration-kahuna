@@ -10,7 +10,7 @@ describe('Kahuna', function(){
 
   beforeEach(function(){
     settings = {
-      key: '6bc9b7c617d5436baf11d8a113499435',
+      apiKey: '6bc9b7c617d5436baf11d8a113499435',
       env: 'p'
     };
     kahuna = new Kahuna(settings)
@@ -22,13 +22,13 @@ describe('Kahuna', function(){
     test
       .name('Kahuna')
       .channels(['server', 'mobile'])
-      .ensure('settings.key')
+      .ensure('settings.apiKey')
       .retries(2);
   });
 
   describe('.validate()', function(){
     it('should not be valid without an api key', function(){
-      delete settings.key;
+      delete settings.apiKey;
       test.invalid({}, settings);
     });
 
@@ -56,7 +56,7 @@ describe('Kahuna', function(){
     it('should send basic identify', function(done){
       var json = test.fixture('identify-basic');
 
-      json.output.key = settings.key;
+      json.output.key = settings.apiKey;
       json.output.env = settings.env;
 
       var output = json.output;
@@ -66,6 +66,7 @@ describe('Kahuna', function(){
         .expects(200)
         .end(done);
     });
+
   });
 
   /*describe('.track()', function(){
