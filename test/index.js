@@ -11,7 +11,7 @@ describe('Kahuna', function(){
   beforeEach(function(){
     settings = {
       apiKey: '6bc9b7c617d5436baf11d8a113499435',
-      env: 'p'
+      env: false
     };
     kahuna = new Kahuna(settings)
     test = Test(kahuna, __dirname);
@@ -57,7 +57,7 @@ describe('Kahuna', function(){
       var json = test.fixture('identify-basic');
 
       json.output.key = settings.apiKey;
-      json.output.env = settings.env;
+      json.output.env = settings.env ? 'p' : 's';
 
       var output = json.output;
       test
