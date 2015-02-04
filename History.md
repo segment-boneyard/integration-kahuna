@@ -1,4 +1,10 @@
 
+1.0.5 / 2015-02-04
+==================
+
+  * Stringify user_info dict
+  * Update circle template
+
 1.0.4 / 2015-02-03
 ==================
 
