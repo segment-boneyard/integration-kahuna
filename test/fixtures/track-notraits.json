@@ -32,19 +32,12 @@
       "referrer": {
         "type": "other",
         "id": "some-id"
-      },
-      "traits": {
-        "firstName": "Jane",
-        "lastName": "Doe",
-        "email": "janedoe@example.com"
       }
     }
   },
   "output": {
     "dev_id": "some-device",
     "username": "user-id2",
-    "user_email": "janedoe@example.com",
-    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\"}",
     "event": "played a song",
     "app_name": "Test",
     "app_ver": "1.0",

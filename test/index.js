@@ -44,12 +44,15 @@ describe('Kahuna', function(){
       });
     });
 
-    /*describe('track', function(){
+    describe('track', function(){
       it('should map basic track', function(){
         test.maps('track-basic');
       });
-    });*/
 
+      it('should map notraits track', function(){
+        test.maps('track-notraits');
+      });
+    });
   });
 
   describe('.identify()', function(){
@@ -69,11 +72,26 @@ describe('Kahuna', function(){
 
   });
 
-  /*describe('.track()', function(){
+  describe('.track()', function(){
     it('should send basic track', function(done){
       var json = test.fixture('track-basic');
-      var output = json.output;
-      output.timestamp = new Date(output.timestamp);
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should properly handle case w/o traits', function(done){
+      var json = test.fixture('track-notraits');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
       test
         .track(json.input)
         .sends(json.output)
@@ -81,6 +99,4 @@ describe('Kahuna', function(){
         .end(done);
     });
   });
-*/
-
 });
