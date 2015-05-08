@@ -21,7 +21,7 @@ describe('Kahuna', function(){
   it('should have the correct settings', function(){
     test
       .name('Kahuna')
-      .channels(['server', 'mobile'])
+      .channels(['server', 'mobile', 'client'])
       .ensure('settings.apiKey')
       .retries(2);
   });
