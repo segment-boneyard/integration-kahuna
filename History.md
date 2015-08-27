@@ -1,4 +1,9 @@
 
+1.0.7 / 2015-08-27
+==================
+
+  * Updated Kahuna server integration to generate a dev_id from username or email if the context doesn't have a dev_id already.
+
 1.0.6 / 2015-05-08
 ==================
 
