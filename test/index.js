@@ -70,6 +70,19 @@ describe('Kahuna', function(){
         .end(done);
     });
 
+    it('identify should have dev_id', function(done){
+      var json = test.fixture('identify-no-dev-id');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      var output = json.output;
+      test
+        .identify(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
   });
 
   describe('.track()', function(){
@@ -88,6 +101,32 @@ describe('Kahuna', function(){
 
     it('should properly handle case w/o traits', function(done){
       var json = test.fixture('track-notraits');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should have dev_id with username', function(done){
+      var json = test.fixture('track-no-dev-id-username');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should have dev_id with email', function(done){
+      var json = test.fixture('track-no-dev-id-email');
 
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
