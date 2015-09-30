@@ -45,7 +45,6 @@
     "event": "played a song",
     "app_name": "Test",
     "app_ver": "1.0",
-    "os_name": "iOS",
     "os_version": "7.0",
     "dev_name": "1.2"
   }

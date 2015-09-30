@@ -18,7 +18,7 @@
         "id": "some-device"
       },
       "os": {
-        "name": "iPhone OS",
+        "name": "ios",
         "version": "7.0"
       },
       "network": {
@@ -48,7 +48,7 @@
     "event": "played a song",
     "app_name": "Test",
     "app_ver": "1.0",
-    "os_name": "iOS",
+    "os_name": "ios",
     "os_version": "7.0",
     "dev_name": "1.2"
   }
