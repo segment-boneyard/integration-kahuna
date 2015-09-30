@@ -18,7 +18,7 @@
         "id": "some-device"
       },
       "os": {
-        "name": "iOS",
+        "name": "iPhone OS",
         "version": "7.0"
       },
       "network": {
