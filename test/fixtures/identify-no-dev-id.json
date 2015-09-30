@@ -20,7 +20,7 @@
         "advertisingId": "id-for-attribution"
       },
       "os": {
-        "name": "iOS",
+        "name": "iPhone OS",
         "version": "7.0"
       },
       "network": {
@@ -45,12 +45,8 @@
     "event": "start",
     "app_name": "Test",
     "app_ver": "1.0",
-    "os_name": "iOS",
+    "os_name": "ios",
     "os_version": "7.0",
     "dev_name": "1.2"
   }
 }
-
-
-
-
