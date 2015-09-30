@@ -1,4 +1,9 @@
 
+1.0.8 / 2015-09-30
+==================
+
+  * Map iPhone OS (as sent by our iOS library) to simply iOS
+
 1.0.7 / 2015-08-27
 ==================
 
