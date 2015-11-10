@@ -39,7 +39,7 @@
   },
   "output": {
     "dev_id": "nodev-segment-2964295494",
-    "username": "user-id2",
+    "user_id": "user-id2",
     "user_email": "janedoe@example.com",
     "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"id\":\"user-id2\"}",
     "event": "start",
