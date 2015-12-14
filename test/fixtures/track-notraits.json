@@ -37,7 +37,7 @@
   },
   "output": {
     "dev_id": "some-device",
-    "username": "user-id2",
+    "user_id": "user-id2",
     "event": "played a song",
     "app_name": "Test",
     "app_ver": "1.0",

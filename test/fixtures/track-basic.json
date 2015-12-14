@@ -36,15 +36,17 @@
       "traits": {
         "firstName": "Jane",
         "lastName": "Doe",
-        "email": "janedoe@example.com"
+        "email": "janedoe@example.com",
+        "username": "janedoe23"
       }
     }
   },
   "output": {
     "dev_id": "some-device",
-    "username": "user-id2",
+    "user_id": "user-id2",
     "user_email": "janedoe@example.com",
-    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\"}",
+    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"username\":\"janedoe23\"}",
+    "username": "janedoe23",
     "event": "played a song",
     "app_name": "Test",
     "app_ver": "1.0",

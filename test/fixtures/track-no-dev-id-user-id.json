@@ -40,8 +40,8 @@
     }
   },
   "output": {
-    "dev_id": "nodev-segment-3076010732",
-    "username": "user-id-5",
+    "dev_id": "nodev-segment-user-id-3076010732",
+    "user_id": "user-id-5",
     "user_email": "janedoe@example.com",
     "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\"}",
     "event": "played a song",

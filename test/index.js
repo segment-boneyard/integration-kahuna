@@ -13,7 +13,7 @@ describe('Kahuna', function(){
       apiKey: '6bc9b7c617d5436baf11d8a113499435',
       env: false
     };
-    kahuna = new Kahuna(settings)
+    kahuna = new Kahuna(settings);
     test = Test(kahuna, __dirname);
     test.mapper(mapper);
   });
@@ -112,8 +112,8 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('should have dev_id with username', function(done){
-      var json = test.fixture('track-no-dev-id-username');
+    it('should have dev_id with user_id', function(done){
+      var json = test.fixture('track-no-dev-id-user-id');
 
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
