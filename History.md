@@ -1,4 +1,11 @@
 
+1.0.10 / 2015-12-17
+===================
+
+  * Re-include option to create dev_id from email in absence of user_id, associated test fix up, whitespace
+  * Map username if available in both identify() and track()
+  * Switch from username to user_id as primary credential in identify and track
+
 1.0.9 / 2015-09-30
 ==================
 
@@ -13,10 +20,6 @@
 ==================
 
   * Updated Kahuna server integration to generate a dev_id from username or email if the context doesn't have a dev_id already.
-
-1.0.6 / 2015-05-08
-==================
-
 
 
 1.0.5 / 2015-02-04
