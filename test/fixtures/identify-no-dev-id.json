@@ -1,11 +1,11 @@
 {
   "input": {
     "type": "identify",
-    "userId": "user-id2",
+    "userId": "100",
     "traits": {
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "email": "janedoe@example.com"
+      "firstName": "Rick",
+      "lastName": "Morty",
+      "email": "hagrid@hagrid.com"
     },
     "context": {
       "ip": "10.0.0.2",
@@ -38,10 +38,9 @@
     }
   },
   "output": {
-    "dev_id": "nodev-segment-user-id-2964295494",
-    "user_id": "user-id2",
-    "user_email": "janedoe@example.com",
-    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"id\":\"user-id2\"}",
+    "dev_id": "nodev-segment-user-id-193357972",
+    "credentials": "{\"user_id\":\"100\",\"email\":\"hagrid@hagrid.com\"}",
+    "user_info": "{\"firstName\":\"Rick\",\"lastName\":\"Morty\",\"email\":\"hagrid@hagrid.com\",\"id\":\"100\"}",
     "event": "start",
     "app_name": "Test",
     "app_ver": "1.0",

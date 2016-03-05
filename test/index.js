@@ -42,6 +42,10 @@ describe('Kahuna', function(){
       it('should map basic identify', function(){
         test.maps('identify-basic');
       });
+
+      it('should map identify even with no device.id', function(){
+        test.maps('identify-no-dev-id');
+      });
     });
 
     describe('track', function(){
@@ -55,35 +59,35 @@ describe('Kahuna', function(){
     });
   });
 
-  describe('.identify()', function(){
-    it('should send basic identify', function(done){
-      var json = test.fixture('identify-basic');
+  // describe('.identify()', function(){
+  //   it('should send basic identify', function(done){
+  //     var json = test.fixture('identify-basic');
 
-      json.output.key = settings.apiKey;
-      json.output.env = settings.env ? 'p' : 's';
+  //     json.output.key = settings.apiKey;
+  //     json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
-      test
-        .identify(json.input)
-        .sends(json.output)
-        .expects(200)
-        .end(done);
-    });
+  //     var output = json.output;
+  //     test
+  //       .identify(json.input)
+  //       .sends(json.output)
+  //       .expects(200)
+  //       .end(done);
+  //   });
 
-    it('identify should have dev_id', function(done){
-      var json = test.fixture('identify-no-dev-id');
+  //   it('identify should have dev_id', function(done){
+  //     var json = test.fixture('identify-no-dev-id');
 
-      json.output.key = settings.apiKey;
-      json.output.env = settings.env ? 'p' : 's';
+  //     json.output.key = settings.apiKey;
+  //     json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
-      test
-        .identify(json.input)
-        .sends(json.output)
-        .expects(200)
-        .end(done);
-    });
-  });
+  //     var output = json.output;
+  //     test
+  //       .identify(json.input)
+  //       .sends(json.output)
+  //       .expects(200)
+  //       .end(done);
+  //   });
+  // });
 
   describe('.track()', function(){
     it('should send basic track', function(done){
@@ -112,30 +116,30 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('should have dev_id with user_id', function(done){
-      var json = test.fixture('track-no-dev-id-user-id');
+    // it('should have dev_id with user_id', function(done){
+    //   var json = test.fixture('track-no-dev-id-user-id');
 
-      json.output.key = settings.apiKey;
-      json.output.env = settings.env ? 'p' : 's';
+    //   json.output.key = settings.apiKey;
+    //   json.output.env = settings.env ? 'p' : 's';
 
-      test
-        .track(json.input)
-        .sends(json.output)
-        .expects(200)
-        .end(done);
-    });
+    //   test
+    //     .track(json.input)
+    //     .sends(json.output)
+    //     .expects(200)
+    //     .end(done);
+    // });
 
-    it('should have dev_id with email', function(done){
-      var json = test.fixture('track-no-dev-id-email');
+    // it('should have dev_id with email', function(done){
+    //   var json = test.fixture('track-no-dev-id-email');
 
-      json.output.key = settings.apiKey;
-      json.output.env = settings.env ? 'p' : 's';
+    //   json.output.key = settings.apiKey;
+    //   json.output.env = settings.env ? 'p' : 's';
 
-      test
-        .track(json.input)
-        .sends(json.output)
-        .expects(200)
-        .end(done);
-    });
+    //   test
+    //     .track(json.input)
+    //     .sends(json.output)
+    //     .expects(200)
+    //     .end(done);
+    // });
   });
 });
