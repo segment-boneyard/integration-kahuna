@@ -47,7 +47,7 @@
   "output": {
     "dev_id": "999999",
     "events": "[{\"event\":\"Damn Daniel\",\"time\":1451606400,\"properties\":{\"shoes\":[\"White Vans\"]}}]",
-    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\"}",
+    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\"}",
     "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\",\"id\":\"111\"}",
     "app_name": "Test",
     "app_ver": "1.0",

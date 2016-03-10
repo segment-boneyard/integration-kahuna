@@ -41,7 +41,7 @@
     "dev_id": "nodev-segment-user-id-193357972",
     "credentials": "{\"user_id\":\"100\",\"email\":\"hagrid@hagrid.com\"}",
     "user_info": "{\"firstName\":\"Rick\",\"lastName\":\"Morty\",\"email\":\"hagrid@hagrid.com\",\"id\":\"100\"}",
-    "event": "start",
+    "event": "user_created_or_updated_segment",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "ios",

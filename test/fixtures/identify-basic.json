@@ -41,9 +41,9 @@
   },
   "output": {
     "dev_id": "999999",
-    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\"}",
+    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\"}",
     "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\",\"id\":\"111\"}",
-    "event": "start",
+    "event": "user_created_or_updated_segment",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "android",
