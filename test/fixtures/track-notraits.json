@@ -1,9 +1,12 @@
 {
   "input": {
     "type": "track",
-    "timestamp": "2014",
-    "event": "played a song",
-    "userId": "user-id2",
+    "timestamp": "2016",
+    "event": "Back at it again",
+    "properties": {
+      "mood": "thirsty man"
+    },
+    "userId": "111",
     "context": {
       "ip": "10.0.0.2",
       "app": {
@@ -15,7 +18,7 @@
         "model": "1.2",
         "manufacturer": "some-brand",
         "advertisingId": "id-for-attribution",
-        "id": "some-device"
+        "id": "999999"
       },
       "os": {
         "name": "android",
@@ -36,9 +39,9 @@
     }
   },
   "output": {
-    "dev_id": "some-device",
-    "user_id": "user-id2",
-    "event": "played a song",
+    "dev_id": "999999",
+    "credentials": "{\"user_id\":\"111\"}",
+    "events": "[{\"event\":\"Back at it again\",\"time\":1451606400,\"properties\":{\"mood\":[\"thirsty man\"]}}]",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "android",

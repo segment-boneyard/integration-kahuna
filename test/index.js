@@ -42,6 +42,10 @@ describe('Kahuna', function(){
       it('should map basic identify', function(){
         test.maps('identify-basic');
       });
+
+      it('should map identify even with no device.id', function(){
+        test.maps('identify-no-dev-id');
+      });
     });
 
     describe('track', function(){

@@ -41,10 +41,9 @@
   },
   "output": {
     "dev_id": "nodev-segment-user-id-3076010732",
-    "user_id": "user-id-5",
-    "user_email": "janedoe@example.com",
-    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\"}",
-    "event": "played a song",
+    "credentials": "{\"user_id\":\"user-id-5\",\"email\":\"janedoe@example.com\"}",
+    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"id\":\"user-id-5\"}",
+    "events": "[{\"event\":\"played a song\",\"time\":1388534400,\"properties\":{}}]",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_version": "7.0",
