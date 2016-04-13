@@ -53,6 +53,10 @@ describe('Kahuna', function(){
         test.maps('track-basic');
       });
 
+      it('should map full track', function(){
+        test.maps('track-full');
+      });
+
       it('should map notraits track', function(){
         test.maps('track-notraits');
       });

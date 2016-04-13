@@ -5,7 +5,10 @@
     "event": "Damn Daniel",
     "userId": "111",
     "properties": {
-      "shoes": "White Vans"
+      "shoes": "White Vans",
+      "boolean": true,
+      "number": 3,
+      "shouldNotBeIncluded": null
     },
     "context": {
      "ip": "10.0.0.2",
@@ -46,7 +49,7 @@
   },
   "output": {
     "dev_id": "999999",
-    "events": "[{\"event\":\"Damn Daniel\",\"time\":1451606400,\"properties\":{\"shoes\":[\"White Vans\"]}}]",
+    "events": "[{\"event\":\"Damn Daniel\",\"time\":1451606400,\"properties\":{\"shoes\":[\"White Vans\"],\"boolean\":[\"true\"],\"number\":[\"3\"]}}]",
     "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\"}",
     "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\",\"id\":\"111\"}",
     "app_name": "Test",
