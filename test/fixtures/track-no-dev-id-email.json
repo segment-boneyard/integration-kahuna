@@ -1,7 +1,7 @@
 {
   "input": {
     "type": "track",
-    "timestamp": "2014",
+    "timestamp": "2016",
     "event": "played a song",
     "context": {
       "ip": "10.0.0.2",
@@ -16,7 +16,7 @@
         "advertisingId": "id-for-attribution"
       },
       "os": {
-        "name": "iOS",
+        "name": "iPhone OS",
         "version": "7.0"
       },
       "network": {
@@ -43,9 +43,10 @@
     "dev_id": "nodev-segment-3040054890",
     "credentials": "{\"email\":\"janedoe@example.com\"}",
     "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"username\":\"janedoe23\"}",
-    "events": "[{\"event\":\"played a song\",\"time\":1388534400,\"properties\":{}}]",
+    "events": "[{\"event\":\"played a song\",\"time\":1451606400,\"properties\":{}}]",
     "app_name": "Test",
     "app_ver": "1.0",
+    "os_name": "ios",
     "os_version": "7.0",
     "dev_name": "1.2"
   }

@@ -1,11 +1,11 @@
 {
   "input": {
     "type": "identify",
-    "userId": "111",
+    "userId": "coconut1234",
     "traits": {
       "firstName": "Han",
       "lastName": "Kim",
-      "email": "bulgogi@bulgogi.com",
+      "email": "water@water.com",
       "username": "food"
     },
     "context": {
@@ -19,7 +19,7 @@
         "model": "1.2",
         "manufacturer": "some-brand",
         "advertisingId": "id-for-attribution",
-        "id": "999999"
+        "id": "88838643"
       },
       "os": {
         "name": "Android",
@@ -40,9 +40,9 @@
     }
   },
   "output": {
-    "dev_id": "999999",
-    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\"}",
-    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\",\"id\":\"111\"}",
+    "dev_id": "88838643",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
     "event": "user_created_or_updated_segment",
     "app_name": "Test",
     "app_ver": "1.0",
