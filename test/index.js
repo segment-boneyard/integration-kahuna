@@ -1,14 +1,15 @@
+'use strict';
 
 var Test = require('segmentio-integration-tester');
 var Kahuna = require('../');
 var mapper = require('../lib/mapper');
 
-describe('Kahuna', function(){
+describe('Kahuna', function() {
   var kahuna;
   var settings;
   var test;
 
-  beforeEach(function(){
+  beforeEach(function() {
     settings = {
       apiKey: '6bc9b7c617d5436baf11d8a113499435',
       env: false
@@ -18,7 +19,7 @@ describe('Kahuna', function(){
     test.mapper(mapper);
   });
 
-  it('should have the correct settings', function(){
+  it('should have the correct settings', function() {
     test
       .name('Kahuna')
       .channels(['server', 'mobile', 'client'])
@@ -26,51 +27,50 @@ describe('Kahuna', function(){
       .retries(2);
   });
 
-  describe('.validate()', function(){
-    it('should not be valid without an api key', function(){
+  describe('.validate()', function() {
+    it('should not be valid without an api key', function() {
       delete settings.apiKey;
       test.invalid({}, settings);
     });
 
-    it('should be valid with complete settings', function(){
+    it('should be valid with complete settings', function() {
       test.valid({}, settings);
     });
   });
 
-  describe('mapper', function(){
-    describe('identify', function(){
-      it('should map basic identify', function(){
+  describe('mapper', function() {
+    describe('identify', function() {
+      it('should map basic identify', function() {
         test.maps('identify-basic');
       });
 
-      it('should map identify even with no device.id', function(){
+      it('should map identify even with no device.id', function() {
         test.maps('identify-no-dev-id');
       });
     });
 
-    describe('track', function(){
-      it('should map basic track', function(){
+    describe('track', function() {
+      it('should map basic track', function() {
         test.maps('track-basic');
       });
 
-      it('should map full track', function(){
+      it('should map full track', function() {
         test.maps('track-full');
       });
 
-      it('should map notraits track', function(){
+      it('should map notraits track', function() {
         test.maps('track-notraits');
       });
     });
   });
 
-  describe('.identify()', function(){
-    it('should send basic identify', function(done){
+  describe('.identify()', function() {
+    it('should send basic identify', function(done) {
       var json = test.fixture('identify-basic');
 
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
       test
         .identify(json.input)
         .sends(json.output)
@@ -78,13 +78,12 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('identify should have dev_id', function(done){
+    it('identify should have dev_id', function(done) {
       var json = test.fixture('identify-no-dev-id');
 
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
       test
         .identify(json.input)
         .sends(json.output)
@@ -93,8 +92,8 @@ describe('Kahuna', function(){
     });
   });
 
-  describe('.track()', function(){
-    it('should send basic track', function(done){
+  describe('.track()', function() {
+    it('should send basic track', function(done) {
       var json = test.fixture('track-basic');
 
       json.output.key = settings.apiKey;
@@ -107,7 +106,7 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('should properly handle case w/o traits', function(done){
+    it('should properly handle case w/o traits', function(done) {
       var json = test.fixture('track-notraits');
 
       json.output.key = settings.apiKey;
@@ -120,7 +119,7 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('should have dev_id with user_id', function(done){
+    it('should have dev_id with user_id', function(done) {
       var json = test.fixture('track-no-dev-id-user-id');
 
       json.output.key = settings.apiKey;
@@ -133,7 +132,7 @@ describe('Kahuna', function(){
         .end(done);
     });
 
-    it('should have dev_id with email', function(done){
+    it('should have dev_id with email', function(done) {
       var json = test.fixture('track-no-dev-id-email');
 
       json.output.key = settings.apiKey;
