@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@ndhoule/foldl": "^1.0.3",
+    "@segment/trample": "^0.1.0",
+    "is": "github:ianstormtaylor/is",
     "reject": "0.0.1",
     "segmentio-integration": "^3.0.5",
     "string-hash": "1.1.0",

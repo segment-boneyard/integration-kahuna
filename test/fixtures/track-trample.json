@@ -1,0 +1,66 @@
+{
+  "input": {
+    "type": "track",
+    "timestamp": "2016",
+    "event": "Suh duuude",
+    "userId": "coconut1234",
+    "properties": {
+      "array": ["hi", 813],
+      "products": [{ "orderId": 123}, {"orderId": "12345"}],
+      "school": {
+        "middle": { "state": "RI" },
+        "college": { "state": "MA" },
+        "jobs": ["segment", true],
+        "emergency": [{ "food": "pho" }, { "food": "pizza" }],
+        "homer": { "disappear": ["pizza", "food"] }
+      }
+    },
+    "context": {
+     "ip": "10.0.0.2",
+      "app": {
+        "name": "Test",
+        "version": "1.0"
+      },
+      "device": {
+        "name": "test-device",
+        "model": "1.2",
+        "manufacturer": "some-brand",
+        "advertisingId": "id-for-attribution",
+        "id": "999999"
+      },
+      "os": {
+        "name": "Android",
+        "version": "7.0"
+      },
+      "network": {
+        "carrier": "some-carrier",
+        "wifi": true
+      },
+      "locale": "en-US",
+      "library": {
+        "name": "analytics-android"
+      },
+      "referrer": {
+        "type": "other",
+        "id": "some-id"
+      },
+      "traits": {
+        "firstName": "Han",
+        "lastName": "Kim",
+        "email": "water@water.com",
+        "username": "food"
+      }
+    }
+  },
+  "output": {
+    "dev_id": "999999",
+    "events": "[{\"event\":\"Suh duuude\",\"time\":1451606400,\"properties\":{\"array\":[\"hi\",\"813\"],\"products.0.orderId\":[\"123\"],\"products.1.orderId\":[\"12345\"],\"school.middle.state\":[\"RI\"],\"school.college.state\":[\"MA\"],\"school.jobs\":[\"segment\",\"true\"],\"school.emergency.0.food\":[\"pho\"],\"school.emergency.1.food\":[\"pizza\"],\"school.homer.disappear\":[\"pizza\",\"food\"]}}]",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
+    "app_name": "Test",
+    "app_ver": "1.0",
+    "os_name": "android",
+    "os_version": "7.0",
+    "dev_name": "1.2"
+  }
+}

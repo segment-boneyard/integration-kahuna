@@ -60,6 +60,10 @@ describe('Kahuna', function(){
       it('should map notraits track', function(){
         test.maps('track-notraits');
       });
+
+      it('should map track with compound object properties', function(){
+        test.maps('track-trample');
+      });
     });
   });
 
@@ -109,6 +113,19 @@ describe('Kahuna', function(){
 
     it('should properly handle case w/o traits', function(done){
       var json = test.fixture('track-notraits');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
+
+    it('should properly handle compound objects', function(done){
+      var json = test.fixture('track-trample');
 
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
