@@ -64,6 +64,10 @@ describe('Kahuna', function(){
       it('should map track with compound object properties', function(){
         test.maps('track-trample');
       });
+
+      it('should strip null properties', function(){
+        test.maps('track-bad');
+      });
     });
   });
 
