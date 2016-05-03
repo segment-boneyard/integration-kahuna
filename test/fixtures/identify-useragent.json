@@ -1,0 +1,36 @@
+{
+  "input": {
+    "type": "identify",
+    "timestamp": "2016",
+    "userId": "800001",
+    "traits": {
+      "email": "kanye3@west.com"
+    },
+    "context": {
+     "ip": "10.0.0.2",
+      "app": {
+        "name": "Test",
+        "version": "1.0"
+      },
+      "device": {
+        "name": "test-device",
+        "model": "1.4",
+        "manufacturer": "some-brand",
+        "advertisingId": "id-for-attribution",
+        "id": "141414",
+        "token": "ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449"
+      },
+      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A"
+    }
+  },
+  "output": {
+    "dev_id": "141414",
+    "event": "user_created_or_updated_segment",
+    "credentials": "{\"user_id\":\"800001\",\"email\":\"kanye3@west.com\"}",
+    "app_name": "Test",
+    "app_ver": "1.0",
+    "dev_name": "1.4",
+    "push_token": "ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449",
+    "user_info": "{\"email\":\"kanye3@west.com\",\"id\":\"800001\"}"
+  }
+}
