@@ -1,27 +1,25 @@
 {
   "input": {
-    "type": "track",
-    "timestamp": "2016",
-    "event": "Damn Daniel",
-    "userId": "111",
-    "properties": {
-      "shoes": "White Vans",
-      "boolean": true,
-      "number": 3,
-      "shouldNotBeIncluded": null
+    "type": "identify",
+    "userId": "coconut1234",
+    "traits": {
+      "firstName": "Han",
+      "lastName": "Kim",
+      "email": "water@water.com",
+      "username": "food"
     },
     "context": {
-     "ip": "10.0.0.2",
+      "ip": "10.0.0.2",
       "app": {
         "name": "Test",
         "version": "1.0"
       },
       "device": {
         "name": "test-device",
-        "model": "1.2",
+        "model": "1.8",
         "manufacturer": "some-brand",
         "advertisingId": "id-for-attribution",
-        "id": "999999",
+        "id": "120398102397",
         "token": "ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449"
       },
       "os": {
@@ -39,25 +37,19 @@
       "referrer": {
         "type": "other",
         "id": "some-id"
-      },
-      "traits": {
-        "firstName": "Han",
-        "lastName": "Kim",
-        "email": "bulgogi@bulgogi.com",
-        "username": "food"
       }
     }
   },
   "output": {
-    "dev_id": "999999",
-    "events": "[{\"event\":\"Damn Daniel\",\"time\":1451606400,\"properties\":{\"shoes\":[\"White Vans\"],\"boolean\":[\"true\"],\"number\":[\"3\"]}}]",
-    "credentials": "{\"user_id\":\"111\",\"email\":\"bulgogi@bulgogi.com\"}",
-    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"bulgogi@bulgogi.com\",\"username\":\"food\",\"id\":\"111\"}",
+    "dev_id": "120398102397",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
+    "event": "user_created_or_updated_segment",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "android",
     "os_version": "7.0",
-    "dev_name": "1.2",
+    "dev_name": "1.8",
     "push_token": "ff15bc0c20c4aa6cd50854ff165fd265c838e5405bfeb9571066395b8c9da449"
   }
 }
