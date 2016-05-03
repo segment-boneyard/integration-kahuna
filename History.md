@@ -1,4 +1,9 @@
 
+1.0.16 / 2016-05-03
+===================
+
+  * add guard clause in case userAgent or context.app are undefined
+
 1.0.15 / 2016-05-03
 ===================
 
