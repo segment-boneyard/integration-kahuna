@@ -78,7 +78,6 @@ describe('Kahuna', function(){
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
       test
         .identify(json.input)
         .sends(json.output)
@@ -92,7 +91,6 @@ describe('Kahuna', function(){
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
       test
         .identify(json.input)
         .sends(json.output)
@@ -106,7 +104,6 @@ describe('Kahuna', function(){
       json.output.key = settings.apiKey;
       json.output.env = settings.env ? 'p' : 's';
 
-      var output = json.output;
       test
         .identify(json.input)
         .sends(json.output)
