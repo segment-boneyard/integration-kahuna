@@ -48,15 +48,16 @@
         "firstName": "Han",
         "lastName": "Kim",
         "email": "water@water.com",
-        "username": "food"
+        "username": "food",
+        "phone": "6667778888"
       }
     }
   },
   "output": {
     "dev_id": "999999",
     "events": "[{\"event\":\"Suh duuude\",\"time\":1451606400,\"properties\":{\"array\":[\"hello\",\"hi\"],\"products.0.orderId\":[\"123\"],\"products.1.orderId\":[\"12345\"],\"school.middle.state\":[\"RI\"],\"school.college.state\":[\"MA\"],\"school.jobs\":[\"segment\",\"true\"],\"school.emergency.0.food\":[\"pho\"],\"school.emergency.1.food\":[\"pizza\"],\"school.homer.disappear\":[\"pizza\",\"food\"]}}]",
-    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
-    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\",\"mobile_number\":\"6667778888\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"phone\":\"6667778888\",\"id\":\"coconut1234\"}",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "android",

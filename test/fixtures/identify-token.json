@@ -6,7 +6,7 @@
       "firstName": "Han",
       "lastName": "Kim",
       "email": "water@water.com",
-      "username": "food"
+      "username": "food",
     },
     "context": {
       "ip": "10.0.0.2",
