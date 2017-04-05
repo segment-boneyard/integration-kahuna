@@ -40,15 +40,16 @@
         "firstName": "Han",
         "lastName": "Kim",
         "email": "water@water.com",
-        "username": "food"
+        "username": "food",
+        "phone": "3334445555"
       }
     }
   },
   "output": {
     "dev_id": "88838643",
     "events": "[{\"event\":\"Damn Daniel\",\"time\":1451606400,\"properties\":{\"shoes\":[\"White Vans\"]}}]",
-    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
-    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\",\"mobile_number\":\"3334445555\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"phone\":\"3334445555\",\"id\":\"coconut1234\"}",
     "app_name": "Test",
     "app_ver": "1.0",
     "os_name": "android",

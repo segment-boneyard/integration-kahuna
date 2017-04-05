@@ -6,7 +6,8 @@
       "firstName": "Han",
       "lastName": "Kim",
       "email": "water@water.com",
-      "username": "food"
+      "username": "food",
+      "phone" : "1112223333"
     },
     "context": {
       "ip": "10.0.0.2",
@@ -41,8 +42,8 @@
   },
   "output": {
     "dev_id": "88838643",
-    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\"}",
-    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"id\":\"coconut1234\"}",
+    "credentials": "{\"user_id\":\"coconut1234\",\"email\":\"water@water.com\",\"mobile_number\":\"1112223333\"}",
+    "user_info": "{\"firstName\":\"Han\",\"lastName\":\"Kim\",\"email\":\"water@water.com\",\"username\":\"food\",\"phone\":\"1112223333\",\"id\":\"coconut1234\"}",
     "event": "user_created_or_updated_segment",
     "app_name": "Test",
     "app_ver": "1.0",

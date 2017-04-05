@@ -233,5 +233,19 @@ describe('Kahuna', function(){
         .expects(200)
         .end(done);
     });
+
+
+    it('should have dev_id with phone', function(done){
+      var json = test.fixture('track-no-dev-id-phone');
+
+      json.output.key = settings.apiKey;
+      json.output.env = settings.env ? 'p' : 's';
+
+      test
+        .track(json.input)
+        .sends(json.output)
+        .expects(200)
+        .end(done);
+    });
   });
 });

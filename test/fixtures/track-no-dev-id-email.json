@@ -35,14 +35,15 @@
         "firstName": "Jane",
         "lastName": "Doe",
         "email": "janedoe@example.com",
-        "username": "janedoe23"
+        "username": "janedoe23",
+        "phone": "5556667777"
       }
     }
   },
   "output": {
     "dev_id": "nodev-segment-3040054890",
-    "credentials": "{\"email\":\"janedoe@example.com\"}",
-    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"username\":\"janedoe23\"}",
+    "credentials": "{\"email\":\"janedoe@example.com\",\"mobile_number\":\"5556667777\"}",
+    "user_info": "{\"firstName\":\"Jane\",\"lastName\":\"Doe\",\"email\":\"janedoe@example.com\",\"username\":\"janedoe23\",\"phone\":\"5556667777\"}",
     "events": "[{\"event\":\"played a song\",\"time\":1451606400,\"properties\":{}}]",
     "app_name": "Test",
     "app_ver": "1.0",

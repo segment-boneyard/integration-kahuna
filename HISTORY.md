@@ -1,10 +1,14 @@
 
+1.2.0 / 2017-04-04
+==================
+
+  * Add support for Mobile Number credential
+
 1.1.0 / 2017-01-31
 ==================
 
   * Standardize integration (linting, Docker configuration, circle.yml, upgrade
 segmentio-integration version, upgrade integration-worker version, etc.)
-
 
 1.0.17 / 2016-05-05
 ===================
